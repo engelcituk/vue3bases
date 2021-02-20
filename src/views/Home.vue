@@ -1,10 +1,10 @@
 <template>
-  <HelloWorld/>  
+ <HelloWorld></HelloWorld>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld"
+import HelloWorld from '@/components/HelloWorld'
 
 export default {
   name: 'Home',
