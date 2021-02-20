@@ -1,5 +1,6 @@
 <template>
   <div>
+    <SimpleFetch></SimpleFetch><hr>
     <TodoList></TodoList><hr>
     <SimpleCounterCompositionApi></SimpleCounterCompositionApi><hr>
     <WatchCounter></WatchCounter><hr>
@@ -17,6 +18,7 @@ import ReactiveCounter from '@/components/ReactiveCounter'
 import WatchCounter from '@/components/WatchCounter'
 import SimpleCounterCompositionApi from '@/components/SimpleCounterCompositionApi'
 import TodoList from '@/components/TodoList'
+import SimpleFetch from '@/components/SimpleFetch'
 
 
 
@@ -29,7 +31,8 @@ export default {
     ReactiveCounter,
     WatchCounter,
     SimpleCounterCompositionApi,
-    TodoList
+    TodoList,
+    SimpleFetch
   }
 }
 </script>
