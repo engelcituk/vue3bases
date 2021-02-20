@@ -1,5 +1,6 @@
 <template>
   <div>
+    <EmitEvents @onFire="eventEmittedFromChild" ></EmitEvents><hr>
     <ProfileWithProps name="Mi nombre" :age="39"></ProfileWithProps><hr>
     <Suspense>
       <template #default>
@@ -30,6 +31,7 @@ import TodoList from '@/components/TodoList'
 import SimpleFetch from '@/components/SimpleFetch'
 import SuspenseFetch from '@/components/SuspenseFetch'
 import ProfileWithProps from '@/components/ProfileWithProps'
+import EmitEvents from '@/components/EmitEvents'
 
 export default {
   name: 'Home',
@@ -42,7 +44,14 @@ export default {
     TodoList,
     SimpleFetch,
     SuspenseFetch,
-    ProfileWithProps
+    ProfileWithProps,
+    EmitEvents
+  },
+  setup(){
+    const eventEmittedFromChild = (message) => {
+      console.log(message)
+    }
+    return { eventEmittedFromChild }
   }
 }
 </script>
