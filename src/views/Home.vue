@@ -1,5 +1,6 @@
 <template>
   <div>
+    <WatchCounter></WatchCounter><hr>
     <ReactiveCounter></ReactiveCounter><hr>
     <SimpleCounter></SimpleCounter><hr>
     <HelloWorld></HelloWorld>
@@ -11,6 +12,7 @@
 import HelloWorld from '@/components/HelloWorld'
 import SimpleCounter from '@/components/SimpleCounter'
 import ReactiveCounter from '@/components/ReactiveCounter'
+import WatchCounter from '@/components/WatchCounter'
 
 
 export default {
@@ -18,7 +20,8 @@ export default {
   components: {
     HelloWorld,
     SimpleCounter,
-    ReactiveCounter  
+    ReactiveCounter,
+    WatchCounter  
   }
 }
 </script>
