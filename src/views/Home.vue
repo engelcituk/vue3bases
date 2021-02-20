@@ -1,5 +1,6 @@
 <template>
   <div>
+    <RootEvents></RootEvents><hr>
     <EmitEvents @onFire="eventEmittedFromChild" ></EmitEvents><hr>
     <ProfileWithProps name="Mi nombre" :age="39"></ProfileWithProps><hr>
     <Suspense>
@@ -32,6 +33,8 @@ import SimpleFetch from '@/components/SimpleFetch'
 import SuspenseFetch from '@/components/SuspenseFetch'
 import ProfileWithProps from '@/components/ProfileWithProps'
 import EmitEvents from '@/components/EmitEvents'
+import RootEvents from '@/components/RootEvents'
+
 
 export default {
   name: 'Home',
@@ -45,7 +48,8 @@ export default {
     SimpleFetch,
     SuspenseFetch,
     ProfileWithProps,
-    EmitEvents
+    EmitEvents,
+    RootEvents
   },
   setup(){
     const eventEmittedFromChild = (message) => {

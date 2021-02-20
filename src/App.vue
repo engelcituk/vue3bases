@@ -1,10 +1,30 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div>
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </div>
+    <router-view/>
   </div>
-  <router-view/>
 </template>
+
+<script>
+import { inject, onMounted } from 'vue'
+
+export default {
+  name: 'App',
+  setup(){
+
+    const emitter = inject("emitter")
+
+    onMounted( () => {
+      emitter.on("onRootFire", (message) => {
+        console.log(message)
+      })
+    })
+  }
+}
+</script>
 
 <style>
 #app {
