@@ -1,5 +1,6 @@
 <template>
   <div>
+    <ProfileWithProps name="Mi nombre" :age="39"></ProfileWithProps><hr>
     <Suspense>
       <template #default>
         <SuspenseFetch></SuspenseFetch>
@@ -28,6 +29,7 @@ import SimpleCounterCompositionApi from '@/components/SimpleCounterCompositionAp
 import TodoList from '@/components/TodoList'
 import SimpleFetch from '@/components/SimpleFetch'
 import SuspenseFetch from '@/components/SuspenseFetch'
+import ProfileWithProps from '@/components/ProfileWithProps'
 
 export default {
   name: 'Home',
@@ -39,7 +41,8 @@ export default {
     SimpleCounterCompositionApi,
     TodoList,
     SimpleFetch,
-    SuspenseFetch
+    SuspenseFetch,
+    ProfileWithProps
   }
 }
 </script>
