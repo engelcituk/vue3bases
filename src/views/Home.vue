@@ -1,5 +1,6 @@
 <template>
   <div>
+    <SimpleCounterCompositionApi></SimpleCounterCompositionApi><hr>
     <WatchCounter></WatchCounter><hr>
     <ReactiveCounter></ReactiveCounter><hr>
     <SimpleCounter></SimpleCounter><hr>
@@ -13,6 +14,8 @@ import HelloWorld from '@/components/HelloWorld'
 import SimpleCounter from '@/components/SimpleCounter'
 import ReactiveCounter from '@/components/ReactiveCounter'
 import WatchCounter from '@/components/WatchCounter'
+import SimpleCounterCompositionApi from '@/components/SimpleCounterCompositionApi'
+
 
 
 export default {
@@ -21,7 +24,8 @@ export default {
     HelloWorld,
     SimpleCounter,
     ReactiveCounter,
-    WatchCounter  
+    WatchCounter,
+    SimpleCounterCompositionApi 
   }
 }
 </script>
