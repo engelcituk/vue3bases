@@ -1,6 +1,7 @@
 <template>
   <div>
-    <SimpleCounter></SimpleCounter>
+    <ReactiveCounter></ReactiveCounter><hr>
+    <SimpleCounter></SimpleCounter><hr>
     <HelloWorld></HelloWorld>
   </div>
 </template>
@@ -9,12 +10,15 @@
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld'
 import SimpleCounter from '@/components/SimpleCounter'
+import ReactiveCounter from '@/components/ReactiveCounter'
+
 
 export default {
   name: 'Home',
   components: {
     HelloWorld,
-    SimpleCounter   
+    SimpleCounter,
+    ReactiveCounter  
   }
 }
 </script>
